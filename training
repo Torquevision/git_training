@@ -1,0 +1,41 @@
+GIT
+Versioning Tool
+Tress Structure
+master
+git init ---> .git
+git remote add name url
+
+git add file url location
+git add . --> stage, unstage
+git commit -m "message"  
+git push origin develop_one -----> head
+git pull origin develop_two  ----> your changes will be overrriden please commit or stash before merge
+git checkout --theirs source, git checkout --ours source
+conficlts --- >>>>> head
+			code from server
+		=====
+			code from local
+		<<<<< your changes
+git add conflicted file
+git commit -m "conflicts resolve"
+git status -- unmerged path
+git diff source
+Stash 
+git stash 
+	working directory .git stash -- name
+	git stash list
+	git pull --> git stash apply
+	git stash apply stash-name
+rebase
+git branch
+git checkout -b branch_name ---> 
+git checkout branch
+develop 
+	-> dev_one ---> commit --> pull request 
+pull origin develop after PR
+git checkout develop 
+	git merge dev_one
+
+git clone url
+git clone --single-branch branch url
+default --> branch
